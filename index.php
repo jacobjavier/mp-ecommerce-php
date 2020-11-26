@@ -13,24 +13,7 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     
-    <?php
-// SDK de Mercado Pago
-require __DIR__ .  '/mercadosdk/vendor/autoload.php';
-
-// Agrega credenciales
-MercadoPago\SDK::setAccessToken('APP_USR-2380553435167399-112600-354775258b16a065a835390cddd5376a-669067675');
-
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Producto de jacob';
-$item->quantity = 1;
-$item->unit_price = 795.56;
-$preference->items = array($item);
-$preference->save();
-?>
+    
 
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
